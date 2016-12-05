@@ -1,0 +1,47 @@
+
+The following (Fig 1.) depicts the layout of the ISP
+header as it pertains to the shift register
+and voltage sources
+
+Fig 1.
++----------------------------------------------+
+|                                              |
+|     Shift Clock - 1 . . 2  - Output Enable   |
+|   Storage Clock - 3 . . 4  - Data            |
+|             N/C - 5 . . 6  - N/C             |
+|             +5V - 7 . . 8  - GND             |
+|             +9V - 9 . . 10 - GND             |
+|                                              |
++----------------------------------------------+
+
+
+The next figure shows the same ISP header, but
+with the mapping of the ESP8266 pins to it.
+
+Fig 2.
++--------------------------------+
+|                                |
+|   GPIO13 - 1 . . 2  - GPIO16   |
+|   GPIO12 - 3 . . 4  - GPIO14   |
+|      N/C - 5 . . 6  - N/C      |
+|      +5V - 7 . . 8  - GND      |
+|      +9V - 9 . . 10 - GND      |
+|                                |
++--------------------------------+
+
+
+From this we can map the ESP8266 pins to the
+pins of the Shift Register:
+
+
+Fig 2.
++----------------------------+
+|                            |
+|   GPIO13 - Shift Clock     |
+|   GPIO16 - Output Enable   |
+|   GPIO12 - Storage Clock   |
+|   GPIO14 - Data            |
+|                            |
++----------------------------+
+
+
