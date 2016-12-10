@@ -1,4 +1,4 @@
-update=Sunday, 04 December 2016 'amt' 01:06:21 am
+update=Saturday, 10 December 2016 'pmt' 10:09:39 pm
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=/Users/brettwilkins/Documents/kicad/libraries/misc;/Users/brettwilkins/Documents/kicad/libraries/kicad-ESP8266
@@ -60,3 +58,5 @@ LibName28=contrib
 LibName29=valves
 LibName30=ESP8266
 LibName31=lm2937
+[general]
+version=1
