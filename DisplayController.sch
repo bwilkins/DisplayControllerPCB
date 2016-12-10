@@ -36,10 +36,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "A Momentary Lapse of Sanity"
+Date "2016-12-10"
+Rev "2"
+Comp "A Brett Wilkins Creation"
 Comment1 ""
 Comment2 ""
 Comment3 ""
