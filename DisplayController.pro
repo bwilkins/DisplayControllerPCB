@@ -1,4 +1,4 @@
-update=Saturday, 10 December 2016 'pmt' 10:09:39 pm
+update=Sunday, 15 January 2017 'pmt' 06:07:44 pm
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,9 +23,11 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
-LibDir=/Users/brettwilkins/Documents/kicad/libraries/misc;/Users/brettwilkins/Documents/kicad/libraries/kicad-ESP8266
+LibDir=/Users/brettwilkins/Documents/kicad/libraries/misc;/Users/brettwilkins/Documents/kicad/libraries/kicad-ESP8266;/Users/brettwilkins/Documents/kicad/libraries/kicad_lib_tmk
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,5 +60,5 @@ LibName28=contrib
 LibName29=valves
 LibName30=ESP8266
 LibName31=lm2937
-[general]
-version=1
+LibName32=keyboard_parts
+LibName33=mkl27z256vfm4

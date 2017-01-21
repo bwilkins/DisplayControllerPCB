@@ -30,6 +30,8 @@ LIBS:contrib
 LIBS:valves
 LIBS:ESP8266
 LIBS:lm2937
+LIBS:keyboard_parts
+LIBS:mkl27z256vfm4
 LIBS:DisplayController-cache
 EELAYER 25 0
 EELAYER END
@@ -837,4 +839,12 @@ Wire Wire Line
 Connection ~ 5550 5000
 Wire Wire Line
 	5550 5000 5550 2800
+NoConn ~ 6850 4600
+NoConn ~ 8650 4700
+NoConn ~ 8650 4800
+NoConn ~ 9650 4400
+NoConn ~ 9650 4700
+NoConn ~ 9650 4800
+NoConn ~ 9750 1750
+NoConn ~ 10250 1750
 $EndSCHEMATC

@@ -2,14 +2,14 @@
 <export version="D">
   <design>
     <source>/Users/brettwilkins/Documents/kicad/projects/DisplayController/DisplayController.sch</source>
-    <date>Saturday, 10 December 2016 'pmt' 09:45:51 pm</date>
-    <tool>Eeschema 4.0.2-stable</tool>
+    <date>Tuesday, 13 December 2016 'pmt' 07:07:53 pm</date>
+    <tool>Eeschema 4.0.4-stable</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title/>
-        <company/>
-        <rev/>
-        <date/>
+        <title>A Momentary Lapse of Sanity</title>
+        <company>A Brett Wilkins Creation</company>
+        <rev>2</rev>
+        <date>2016-12-10</date>
         <source>DisplayController.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -20,8 +20,8 @@
   </design>
   <components>
     <comp ref="U1">
-      <value>ESP-12E</value>
-      <footprint>ESP8266:ESP-12E</footprint>
+      <value>ESP-12</value>
+      <footprint>ESP8266:ESP-12-SMD</footprint>
       <libsource lib="ESP8266" part="ESP-12"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5842D02F</tstamp>
@@ -40,30 +40,34 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5842D1AC</tstamp>
     </comp>
-    <comp ref="Q2">
-      <value>PZT2222A</value>
-      <footprint>TO_SOT_Packages_SMD:SOT-223</footprint>
+    <comp ref="Q4">
+      <value>SMBT2222A</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23_Handsoldering</footprint>
+      <datasheet>http://au.element14.com/infineon/smbt2222ae6327htsa1/transistor-npn-sot-23/dp/1056537</datasheet>
       <libsource lib="transistors" part="PZT2222A"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5842D47E</tstamp>
     </comp>
-    <comp ref="Q4">
-      <value>PZT2222A</value>
-      <footprint>TO_SOT_Packages_SMD:SOT-223</footprint>
+    <comp ref="Q2">
+      <value>SMBT2222A</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23_Handsoldering</footprint>
+      <datasheet>http://au.element14.com/infineon/smbt2222ae6327htsa1/transistor-npn-sot-23/dp/1056537</datasheet>
       <libsource lib="transistors" part="PZT2222A"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5842D4D1</tstamp>
     </comp>
-    <comp ref="Q1">
-      <value>PZT2222A</value>
-      <footprint>TO_SOT_Packages_SMD:SOT-223</footprint>
+    <comp ref="Q3">
+      <value>SMBT2222A</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23_Handsoldering</footprint>
+      <datasheet>http://au.element14.com/infineon/smbt2222ae6327htsa1/transistor-npn-sot-23/dp/1056537</datasheet>
       <libsource lib="transistors" part="PZT2222A"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5842D512</tstamp>
     </comp>
-    <comp ref="Q3">
-      <value>PZT2222A</value>
-      <footprint>TO_SOT_Packages_SMD:SOT-223</footprint>
+    <comp ref="Q1">
+      <value>SMBT2222A</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23_Handsoldering</footprint>
+      <datasheet>http://au.element14.com/infineon/smbt2222ae6327htsa1/transistor-npn-sot-23/dp/1056537</datasheet>
       <libsource lib="transistors" part="PZT2222A"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5842D53F</tstamp>
@@ -257,7 +261,7 @@
       </pins>
     </libpart>
     <libpart lib="conn" part="CONN_01X02">
-      <description>Connector 01x02</description>
+      <description>Connector, single row, 01x02</description>
       <footprints>
         <fp>Pin_Header_Straight_1X02</fp>
         <fp>Pin_Header_Angled_1X02</fp>
@@ -274,7 +278,7 @@
       </pins>
     </libpart>
     <libpart lib="conn" part="CONN_01X06">
-      <description>Connector 01x06</description>
+      <description>Connector, single row, 01x06</description>
       <footprints>
         <fp>Pin_Header_Straight_1X06</fp>
         <fp>Pin_Header_Angled_1X06</fp>
@@ -295,7 +299,7 @@
       </pins>
     </libpart>
     <libpart lib="conn" part="CONN_02X05">
-      <description>Connector 02x05</description>
+      <description>Connector, double row, 02x05</description>
       <footprints>
         <fp>Pin_Header_Straight_2X05</fp>
         <fp>Pin_Header_Angled_2X05</fp>
@@ -354,13 +358,8 @@
     </libpart>
     <libpart lib="device" part="LED">
       <footprints>
-        <fp>LED-3MM</fp>
-        <fp>LED-5MM</fp>
-        <fp>LED-10MM</fp>
-        <fp>LED-0603</fp>
-        <fp>LED-0805</fp>
-        <fp>LED-1206</fp>
-        <fp>LEDV</fp>
+        <fp>LED-*</fp>
+        <fp>LED_*</fp>
       </footprints>
       <fields>
         <field name="Reference">D</field>
@@ -444,135 +443,135 @@
     </libpart>
   </libparts>
   <libraries>
-    <library logical="transistors">
-      <uri>/Library/Application Support/kicad/library/transistors.lib</uri>
-    </library>
-    <library logical="conn">
-      <uri>/Library/Application Support/kicad/library/conn.lib</uri>
-    </library>
     <library logical="lm2937">
       <uri>/Users/brettwilkins/Documents/kicad/libraries/misc/lm2937.lib</uri>
-    </library>
-    <library logical="ESP8266">
-      <uri>/Users/brettwilkins/Documents/kicad/libraries/kicad-ESP8266/ESP8266.lib</uri>
     </library>
     <library logical="device">
       <uri>/Library/Application Support/kicad/library/device.lib</uri>
     </library>
+    <library logical="ESP8266">
+      <uri>/Users/brettwilkins/Documents/kicad/libraries/kicad-ESP8266/ESP8266.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>/Library/Application Support/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="transistors">
+      <uri>/Library/Application Support/kicad/library/transistors.lib</uri>
+    </library>
   </libraries>
   <nets>
     <net code="1" name="+9V">
-      <node ref="IC2" pin="1"/>
+      <node ref="P2" pin="9"/>
+      <node ref="P1" pin="1"/>
       <node ref="C4" pin="1"/>
       <node ref="IC1" pin="1"/>
-      <node ref="P1" pin="1"/>
-      <node ref="P2" pin="9"/>
+      <node ref="IC2" pin="1"/>
       <node ref="C2" pin="1"/>
     </net>
-    <net code="2" name="Net-(R8-Pad2)">
-      <node ref="R8" pin="2"/>
+    <net code="2" name="Net-(R6-Pad2)">
+      <node ref="R6" pin="2"/>
       <node ref="U1" pin="7"/>
     </net>
-    <net code="3" name="Net-(R6-Pad2)">
-      <node ref="R6" pin="2"/>
-      <node ref="U1" pin="6"/>
-    </net>
-    <net code="4" name="Net-(R4-Pad2)">
-      <node ref="R4" pin="2"/>
+    <net code="3" name="Net-(R2-Pad2)">
+      <node ref="R2" pin="2"/>
       <node ref="U1" pin="5"/>
     </net>
-    <net code="5" name="Net-(R2-Pad2)">
-      <node ref="U1" pin="4"/>
-      <node ref="R2" pin="2"/>
+    <net code="4" name="+5V">
+      <node ref="P2" pin="7"/>
+      <node ref="IC1" pin="3"/>
+      <node ref="C1" pin="1"/>
+      <node ref="R7" pin="2"/>
+      <node ref="R5" pin="2"/>
+      <node ref="R3" pin="2"/>
+      <node ref="R1" pin="2"/>
     </net>
-    <net code="6" name="Net-(Q3-Pad1)">
-      <node ref="Q3" pin="1"/>
-      <node ref="R6" pin="1"/>
-    </net>
-    <net code="7" name="Net-(Q1-Pad1)">
-      <node ref="R2" pin="1"/>
-      <node ref="Q1" pin="1"/>
-    </net>
-    <net code="8" name="GND">
+    <net code="5" name="GND">
+      <node ref="C2" pin="2"/>
+      <node ref="C1" pin="2"/>
       <node ref="C3" pin="2"/>
       <node ref="C4" pin="2"/>
       <node ref="P1" pin="2"/>
-      <node ref="C2" pin="2"/>
+      <node ref="P2" pin="10"/>
+      <node ref="P2" pin="8"/>
+      <node ref="P3" pin="6"/>
       <node ref="Q1" pin="3"/>
       <node ref="Q3" pin="3"/>
-      <node ref="P3" pin="6"/>
-      <node ref="P2" pin="8"/>
-      <node ref="P2" pin="10"/>
       <node ref="SW2" pin="1"/>
       <node ref="R13" pin="1"/>
       <node ref="R9" pin="1"/>
       <node ref="C5" pin="2"/>
       <node ref="SW1" pin="2"/>
-      <node ref="Q4" pin="3"/>
       <node ref="Q2" pin="3"/>
+      <node ref="Q4" pin="3"/>
       <node ref="IC1" pin="4"/>
       <node ref="IC1" pin="2"/>
       <node ref="IC2" pin="4"/>
       <node ref="IC2" pin="2"/>
       <node ref="U1" pin="9"/>
-      <node ref="C1" pin="2"/>
     </net>
-    <net code="9" name="Net-(R12-Pad2)">
+    <net code="6" name="Net-(Q1-Pad1)">
+      <node ref="Q1" pin="1"/>
+      <node ref="R6" pin="1"/>
+    </net>
+    <net code="7" name="Net-(Q3-Pad1)">
+      <node ref="R2" pin="1"/>
+      <node ref="Q3" pin="1"/>
+    </net>
+    <net code="8" name="Net-(R12-Pad2)">
       <node ref="U1" pin="12"/>
       <node ref="R12" pin="2"/>
       <node ref="SW2" pin="2"/>
     </net>
-    <net code="10" name="Net-(R11-Pad1)">
-      <node ref="U1" pin="3"/>
-      <node ref="SW1" pin="1"/>
+    <net code="9" name="Net-(R11-Pad1)">
       <node ref="R11" pin="1"/>
+      <node ref="SW1" pin="1"/>
+      <node ref="U1" pin="3"/>
     </net>
-    <net code="11" name="Net-(R10-Pad1)">
-      <node ref="U1" pin="1"/>
-      <node ref="R10" pin="1"/>
-    </net>
-    <net code="12" name="Net-(R13-Pad2)">
+    <net code="10" name="Net-(R13-Pad2)">
       <node ref="R13" pin="2"/>
       <node ref="U1" pin="10"/>
     </net>
-    <net code="13" name="+5V">
-      <node ref="R7" pin="2"/>
-      <node ref="R5" pin="2"/>
-      <node ref="R3" pin="2"/>
-      <node ref="R1" pin="2"/>
-      <node ref="IC1" pin="3"/>
-      <node ref="P2" pin="7"/>
-      <node ref="C1" pin="1"/>
+    <net code="11" name="Net-(R4-Pad2)">
+      <node ref="R4" pin="2"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="12" name="Net-(R8-Pad2)">
+      <node ref="R8" pin="2"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="13" name="Net-(Q2-Pad1)">
+      <node ref="R8" pin="1"/>
+      <node ref="Q2" pin="1"/>
     </net>
     <net code="14" name="Net-(Q4-Pad1)">
-      <node ref="R8" pin="1"/>
+      <node ref="R4" pin="1"/>
       <node ref="Q4" pin="1"/>
     </net>
-    <net code="15" name="Net-(Q2-Pad1)">
-      <node ref="Q2" pin="1"/>
-      <node ref="R4" pin="1"/>
-    </net>
-    <net code="16" name="Net-(D1-Pad1)">
+    <net code="15" name="Net-(D1-Pad1)">
       <node ref="D1" pin="1"/>
       <node ref="R9" pin="2"/>
     </net>
-    <net code="17" name="+3V3">
-      <node ref="R10" pin="2"/>
+    <net code="16" name="+3V3">
+      <node ref="C3" pin="1"/>
       <node ref="C5" pin="1"/>
-      <node ref="U1" pin="8"/>
       <node ref="D1" pin="2"/>
       <node ref="IC2" pin="3"/>
-      <node ref="R12" pin="1"/>
+      <node ref="R10" pin="2"/>
       <node ref="R11" pin="2"/>
-      <node ref="C3" pin="1"/>
+      <node ref="R12" pin="1"/>
+      <node ref="U1" pin="8"/>
     </net>
-    <net code="18" name="Net-(P3-Pad2)">
+    <net code="17" name="Net-(P3-Pad2)">
       <node ref="U1" pin="16"/>
       <node ref="P3" pin="2"/>
     </net>
-    <net code="19" name="Net-(P3-Pad3)">
+    <net code="18" name="Net-(P3-Pad3)">
       <node ref="P3" pin="3"/>
       <node ref="U1" pin="15"/>
+    </net>
+    <net code="19" name="Net-(R10-Pad1)">
+      <node ref="U1" pin="1"/>
+      <node ref="R10" pin="1"/>
     </net>
     <net code="20" name="Net-(P3-Pad1)">
       <node ref="P3" pin="1"/>
@@ -602,23 +601,23 @@
       <node ref="U1" pin="14"/>
     </net>
     <net code="29" name="Net-(P2-Pad2)">
-      <node ref="R1" pin="1"/>
-      <node ref="Q1" pin="2"/>
+      <node ref="Q3" pin="2"/>
       <node ref="P2" pin="2"/>
+      <node ref="R1" pin="1"/>
     </net>
     <net code="30" name="Net-(P2-Pad4)">
       <node ref="R3" pin="1"/>
-      <node ref="Q2" pin="2"/>
+      <node ref="Q4" pin="2"/>
       <node ref="P2" pin="4"/>
     </net>
     <net code="31" name="Net-(P2-Pad3)">
+      <node ref="Q1" pin="2"/>
       <node ref="P2" pin="3"/>
-      <node ref="Q3" pin="2"/>
       <node ref="R5" pin="1"/>
     </net>
     <net code="32" name="Net-(P2-Pad1)">
-      <node ref="Q4" pin="2"/>
       <node ref="P2" pin="1"/>
+      <node ref="Q2" pin="2"/>
       <node ref="R7" pin="1"/>
     </net>
   </nets>
